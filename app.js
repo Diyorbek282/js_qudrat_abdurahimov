@@ -354,3 +354,214 @@
 // };
 
 // user.speak();
+
+// amaliyot-3
+
+// 1-masala
+// const myArray = [[false, true], [1, 2], 99, "yaxshi"];
+
+// for (let i = 0; i < myArray.length; i++) {
+//   if (typeof myArray[i] == "string") {
+//     console.log("String index:", i);
+//   }
+// }
+
+// myArray.forEach((element) => {
+//   if (typeof element == "string") {
+//     console.log("String index:", element);
+//   }
+// });
+
+// 2-masala
+
+// const data = [[1, 2, 3], "qizil", [4, 5, 6], true, false];
+// const number = [];
+// data.forEach((element) => {
+//   const res = Array.isArray(element);
+//   if (res) {
+//     element.forEach((num) => {
+//       number.push(num);
+//     });
+//   }
+// });
+// console.log(number);
+
+// 3-masala
+
+// const checkData = [null, "false", 0, 99, false, undefined, "", NaN, "0"];
+// const falsey = [];
+// checkData.forEach((item) => {
+//   if (!item) {
+//     falsey.push(item);
+//   }
+// });
+
+// console.log(falsey);
+
+// 4-masala
+
+// const word = "samarqand";
+// const splitWord = word.split("").reverse();
+// let newWord = "";
+// for (let i = 0; i < splitWord.length; i++) {
+//   newWord += splitWord[i];
+// }
+// console.log(newWord);
+
+// 5-masala
+// const word = "AssALOmu AlEyKum YAxshimISIz";
+
+// const splitWord = word.split(" ");
+// let newWord = "";
+// for (let i = 0; i < splitWord.length; i++) {
+//   let big = splitWord[i].charAt().toUpperCase();
+//   let small = splitWord[i].slice(1).toLowerCase();
+//   let res = big + small;
+//   newWord += res + " ";
+// }
+
+// console.log(newWord);
+
+// const word = "AssALOmu AlEyKum YAxshimISIz";
+
+// const splitWord = word.split(" ");
+// let newWord = "";
+// splitWord.forEach((element) => {
+//   let big = element.charAt().toLowerCase();
+//   let small = element.slice(1).toUpperCase();
+//   let res = big + small;
+//   newWord += res + " ";
+// });
+
+// console.log(newWord);
+
+// 6-masala
+
+// const numbers = [-1, 87, 4, 3.1, -5.5, Infinity, 0, 1, 2, 0.9];
+// let sum = 0;
+// numbers.forEach((number) => {
+//   if (
+//     number >= 0.0 &&
+//     Math.floor(number) === number &&
+//     number !== Infinity &&
+//     number !== 0
+//   ) {
+//     sum = sum + number;
+//   }
+// });
+// console.log(sum);
+
+// 7-masala
+
+// let words = prompt("So'z kiriting:");
+// let splitWord = words.split("");
+// console.log(words)
+// let sum = 0;
+// splitWord.forEach((element) => {
+//   if (element === "a" || element === "A") {
+//     sum++;
+//   }
+// });
+// console.log(sum, "ta bor!");
+
+// 8-masala
+
+// let array = [21.1, "Roziya", "array", ["I am array"], null, true, 214];
+// array.forEach((element) => {
+//   newTypes = [];
+//   newTypes.push(typeof element);
+//   console.log(newTypes);
+// });
+
+// 9-masala
+
+// let words = prompt("So'z kiriting:");
+// let splitWord = words.split("");
+// console.log(words);
+// let sum = 0;
+// splitWord.forEach((element) => {
+//   sum++;
+// });
+// console.log(sum, "ta bor!");
+
+// 10-masala
+
+// let numbers = [1, 2, 3, 4, 5];
+// let newNumbers = [];
+// numbers.forEach((number, i) => {
+//   newNumbers.push(number + i);
+// });
+// console.log(newNumbers);
+
+// 11-masala
+
+// let number = Number(prompt("Son kiriting:"));
+// let sum = 0;
+// for (let i = number; i > 0; i--) {
+//   sum = sum + i;
+// }
+
+// console.log(sum);
+
+// 12-masala
+// let number = Number(prompt("Son kiriting:"));
+
+// for (let i = 1; i <= 10; i++) {
+//   let res = number * i + 1;
+//   console.log(res);
+// }
+
+// 13-masala
+
+// let numbers = [1, -2, 3, -4, -5];
+
+// let newNumbers = [];
+
+// numbers.forEach((number) => {
+//   newNumbers.push(number * -1);
+// });
+
+// console.log(newNumbers);
+
+// 14-masala
+// let result = [];
+
+// const fizzBuzzFunc = function (num) {
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 !== 0) {
+//       result.push("Fizz");
+//     } else if (i % 3 !== 0 && i % 5 === 0) {
+//       result.push("Buzz");
+//     } else if (i % 3 === 0 && i % 5 === 0) {
+//       result.push("FizzBuzz");
+//     } else {
+//       result.push(i);
+//     }
+//   }
+// };
+
+// fizzBuzzFunc(25);
+
+// console.log(result);
+
+// 15-masala
+
+// const diyorObj = {
+//   name: "Diyorbek",
+//   lastName: "Jumayev",
+//   age: 19,
+//   region: "Bukhara",
+//   isMarried: false,
+//   job: "Programmer",
+//   haqida: function () {
+//     return `Assalomu aleykum, Mening ismim ${this.name}, Familiyam ${
+//       this.lastName
+//     }, Yoshim ${this.age}daman. ${this.region}da yashayman. ${
+//       this.job
+//     } bo'lib ishlayman.${
+//       this.isMarried ? " Uylanganman" : " Men hali uylanmaganman."
+//     }  `;
+//   },
+// };
+
+// console.log(diyorObj.haqida());
