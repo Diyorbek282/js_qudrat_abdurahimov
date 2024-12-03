@@ -565,3 +565,5 @@
 // };
 
 // console.log(diyorObj.haqida());
+// includes('success') bu true yoki false qaytaradi!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// .toggle(class nomi) bu bor bulsa olib tawlayddi klasni yoq bolsa klasni qowadi!!!!!!!!!!!!!!!!
