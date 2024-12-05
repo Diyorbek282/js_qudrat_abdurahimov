@@ -81,12 +81,18 @@
 
 // });
 
-// const li = document.querySelectorAll('li')
-// li.forEach(element => {
-//     element.addEventListener('click', ()=>{
-//         console.log("Bosildi!!!");
+const li = document.querySelectorAll('li')
+li.forEach(element => {
+    element.addEventListener('click', (e)=>{
+        // console.log("Bosildi!!!");
+        // console.log(e);
+        // console.log(e.target);
+        // console.log(element);
+        e.target.style.textDecoration = 'line-through'
+        e.target.style.opacity = '0.8'
+        
+        
+    })
 
-//     })
-
-// });
+});
 
