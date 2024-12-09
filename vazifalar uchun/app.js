@@ -9,7 +9,7 @@ let counter = 0;
 const TV = () => {
   lock_screen.addEventListener("click", (e) => {
     if (counter === 0) {
-      images[counter    ].classList.remove("hidden");
+      images[counter].classList.remove("hidden");
       counter++;
       if (counter === 1) {
         top1.addEventListener("click", () => {
