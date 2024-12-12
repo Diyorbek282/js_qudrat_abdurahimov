@@ -8,8 +8,14 @@ signupForm.addEventListener("submit", (e) => {
 
   if (regEX.test(inputVal)) {
     message.textContent = "Ma'lumot to'g'ri kiritiladi!!!";
+    setTimeout(() => {
+      message.textContent = " ";
+    }, 3000);
   } else {
     message.textContent = "Ma'lumot xato kiritilgan!!!";
+    setTimeout(() => {
+      message.textContent = " ";
+    }, 3000);
   }
 });
 
