@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;800;900&display=swap");
-
       body {
         margin: 0;
         padding: 0;
@@ -19,7 +17,7 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 100px;
         color: #fff;
         margin-bottom: 10px;
       }
@@ -27,7 +25,15 @@
     <title>Date</title>
   </head>
   <body style="display: flex; flex-direction: column">
-    <h1>Date</h1>
+    <h1 id="full-day">Day Month, Year</h1>
+
+    <h1>
+      <span id="hour">Hh</span>
+      :
+      <span id="minute">Mm</span>
+      :
+      <span id="second">Ss</span>
+    </h1>
     <script src="./app.js"></script>
   </body>
 </html>
