@@ -1,4 +1,4 @@
-const getTodos = (callback) => {
+const getTodos = (resurse, callback) => {
   const request = new XMLHttpRequest();
 
   request.addEventListener("readystatechange", () => {
@@ -12,16 +12,18 @@ const getTodos = (callback) => {
   });
 
   //open
-  request.open("GET", "todos.json");
+  request.open("GET", resurse);
 
   //send
   request.send();
 };
 
-getTodos((err, data) => {
-  if (err) {
-    console.log(err);
-  } else {
+getTodos("./todos/todos.json", (err, data) => {
+  console.log(data);
+  getTodos("./todos/todos2.json", (err, data) => {
     console.log(data);
-  }
+    getTodos("./todos/todos3.json", (err, data) => {
+      console.log(data);
+    });
+  });
 });
