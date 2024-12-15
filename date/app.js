@@ -32,7 +32,7 @@ function getTime() {
   fullDay.innerHTML = `
 ${now.getDate()}-${months[now.getMonth()]}, ${now.getFullYear()}`;
 
-  hour.innerHTML = now.getHours();
+  hour.innerHTML = now.getHours() < 10 ? "0" + now.getHours() : now.getHours();
   minute.innerHTML =
     now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
   second.innerHTML =
